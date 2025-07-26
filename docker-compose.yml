@@ -1,0 +1,5 @@
+
+services:
+  newsaggregator:
+    build: .
+    container_name: NewsAggregator
