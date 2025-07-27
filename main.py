@@ -2,11 +2,11 @@ import schedule
 import time
 import requests
 import feedparser
-import json
+import yaml
 
-def read_json(file="data.json"):
+def read_yaml(file="data.yaml"):
     f = open(file)
-    data = json.load(f)
+    data = yaml.safe_load(f)
     return data
 
 ytbRSS = "https://www.youtube.com/feeds/videos.xml?channel_id="
@@ -35,7 +35,8 @@ def discordNotif(webhookUrl, data):
         print("❌ Failed to send message: {response.status_code}, {response.text}")
 
 def main():
-    data = read_json()
+    data = read_yaml()
+    print(data)
     ytbChannelsURL = convert_ytb_ids(data["channelsIDs"])
     last_seen = {URL: None for URL in ytbChannelsURL}
     discordWebhookUrl = data["discordWebhookUrl"]
