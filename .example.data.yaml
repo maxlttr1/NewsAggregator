@@ -1,3 +1,8 @@
-channelsIDs: 
-    - UCIwqXBOPVdJrXLBRTNOOHzA #NassIRL
-discordWebhookUrl: https://discord.com/api/webhooks/
+last_seen:
+  UC_nrtJXnY4z4JqSN83QlNQw: https://www.youtube.com/shorts/ReczO8Fn69M
+  UC_x5XG1OV2P6uZZ5FSM9Ttw: https://www.youtube.com/shorts/SqTl7fFtqiQ
+subscriptions:
+- UC_x5XG1OV2P6uZZ5FSM9Ttw
+- UC_nrtJXnY4z4JqSN83QlNQw
+watch_later:
+- https://www.youtube.com/watch?v=9bZkp7q19f0

@@ -2,3 +2,4 @@ schedule
 requests
 feedparser
 pyyaml
+discord.py
